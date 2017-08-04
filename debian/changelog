@@ -10,6 +10,7 @@ python-jsonschema (2.5.1-5) unstable; urgency=medium
 
   [ Daniel Baumann ]
   * Updating vcs fields.
+  * Updating copyright format url.
 
  -- Ondřej Nový <novy@ondrej.org>  Thu, 19 May 2016 22:02:32 +0200
 
