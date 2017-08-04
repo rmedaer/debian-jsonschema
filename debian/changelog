@@ -3,6 +3,7 @@ python-jsonschema (2.5.1-6) UNRELEASED; urgency=medium
   * Updating vcs fields.
   * Updating copyright format url.
   * Updating maintainer field.
+  * Running wrap-and-sort -bast.
 
  -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 04 Aug 2017 21:59:18 +0200
 

@@ -2,23 +2,26 @@ Source: python-jsonschema
 Section: python
 Priority: optional
 Maintainer: Debian OpenStack <openstack-devel@lists.alioth.debian.org>
-Uploaders: Thomas Goirand <zigo@debian.org>,
-Build-Depends: autopkgtest,
-               debhelper (>= 9),
-               dh-python,
-               python-all,
-               python-setuptools,
-               python-vcversioner,
-               python3-all,
-               python3-setuptools,
-               python3-vcversioner,
-Build-Depends-Indep: python-functools32,
-                     python-mock,
-                     python-nose,
-                     python-pytest,
-                     python3-mock,
-                     python3-nose,
-                     python3-pytest,
+Uploaders:
+ Thomas Goirand <zigo@debian.org>,
+Build-Depends:
+ autopkgtest,
+ debhelper (>= 9),
+ dh-python,
+ python-all,
+ python-setuptools,
+ python-vcversioner,
+ python3-all,
+ python3-setuptools,
+ python3-vcversioner,
+Build-Depends-Indep:
+ python-functools32,
+ python-mock,
+ python-nose,
+ python-pytest,
+ python3-mock,
+ python3-nose,
+ python3-pytest,
 Standards-Version: 3.9.8
 Vcs-Git: https://anonscm.debian.org/git/openstack/python/python-jsonschema.git
 Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python/python-jsonschema.git
@@ -26,10 +29,11 @@ Homepage: https://github.com/Julian/jsonschema
 
 Package: python-jsonschema
 Architecture: all
-Depends: python-functools32,
-         python-mock,
-         ${misc:Depends},
-         ${python:Depends},
+Depends:
+ python-functools32,
+ python-mock,
+ ${misc:Depends},
+ ${python:Depends},
 Description: An(other) implementation of JSON Schema (Draft 3 and 4) - Python 2.7
  JSON Schema is a specification for a JSON-based format for defining
  the structure of JSON data. JSON Schema provides a contract for what
@@ -42,9 +46,10 @@ Description: An(other) implementation of JSON Schema (Draft 3 and 4) - Python 2.
 
 Package: python3-jsonschema
 Architecture: all
-Depends: python3 (>= 3.2.3),
-         ${misc:Depends},
-         ${python3:Depends},
+Depends:
+ python3 (>= 3.2.3),
+ ${misc:Depends},
+ ${python3:Depends},
 Description: An(other) implementation of JSON Schema (Draft 3 and 4) - Python 3.x
  JSON Schema is a specification for a JSON-based format for defining
  the structure of JSON data. JSON Schema provides a contract for what
