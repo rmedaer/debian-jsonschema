@@ -22,7 +22,7 @@ Build-Depends-Indep:
  python3-mock,
  python3-nose,
  python3-pytest,
-Standards-Version: 4.0.0
+Standards-Version: 4.0.1
 Vcs-Git: https://anonscm.debian.org/git/openstack/python/python-jsonschema.git
 Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python/python-jsonschema.git
 Homepage: https://github.com/Julian/jsonschema
