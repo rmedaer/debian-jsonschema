@@ -9,6 +9,7 @@ python-jsonschema (2.5.1-6) UNRELEASED; urgency=medium
     developers dotfiles.
   * Correcting permissions in debian packaging files.
   * Updating standards version to 4.0.1.
+  * Updating standards version to 4.1.0.
 
  -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 04 Aug 2017 21:59:18 +0200
 
