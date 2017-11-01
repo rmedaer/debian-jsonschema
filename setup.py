@@ -13,17 +13,15 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 2",
-    "Programming Language :: Python :: 2.6",
     "Programming Language :: Python :: 2.7",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 
 extras_require = {
     "format" : ["rfc3987", "strict-rfc3339", "webcolors"],
-    ":python_version=='2.6'": ["argparse", "repoze.lru"],
     ":python_version=='2.7'": ["functools32"],
 }
 
@@ -31,7 +29,7 @@ setup(
     name="jsonschema",
     packages=["jsonschema", "jsonschema.tests"],
     package_data={"jsonschema": ["schemas/*.json"]},
-    setup_requires=["vcversioner"],
+    setup_requires=["vcversioner>=2.16.0.0"],
     extras_require=extras_require,
     author="Julian Berman",
     author_email="Julian@GrayVines.com",
