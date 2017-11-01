@@ -1,5 +1,6 @@
-python-jsonschema (2.5.1-6) UNRELEASED; urgency=medium
+python-jsonschema (2.5.1-7) UNRELEASED; urgency=medium
 
+  [ Daniel Baumann ]
   * Updating vcs fields.
   * Updating copyright format url.
   * Updating maintainer field.
@@ -11,7 +12,21 @@ python-jsonschema (2.5.1-6) UNRELEASED; urgency=medium
   * Updating standards version to 4.0.1.
   * Updating standards version to 4.1.0.
 
- -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 04 Aug 2017 21:59:18 +0200
+  [ Ondřej Nový ]
+  * Bumped debhelper compat version to 10
+
+ -- Ondřej Nový <onovy@debian.org>  Thu, 24 Nov 2016 00:07:05 +0100
+
+python-jsonschema (2.5.1-6) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/s/options: extend-diff-ignore of .gitreview
+  * d/control: Using OpenStack's Gerrit as VCS URLs.
+
+  [ Thomas Goirand ]
+  * Adding depends on python3-pkg-resources (Closes: #839075).
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 04 Oct 2016 16:08:48 +0200
 
 python-jsonschema (2.5.1-5) unstable; urgency=medium
 

@@ -6,7 +6,7 @@ Uploaders:
  Thomas Goirand <zigo@debian.org>,
 Build-Depends:
  autopkgtest,
- debhelper (>= 9),
+ debhelper (>= 10),
  dh-python,
  python-all,
  python-setuptools,
@@ -32,6 +32,7 @@ Architecture: all
 Depends:
  python-functools32,
  python-mock,
+ python3-pkg-resources,
  ${misc:Depends},
  ${python:Depends},
 Description: An(other) implementation of JSON Schema (Draft 3 and 4) - Python 2.7
@@ -48,6 +49,7 @@ Package: python3-jsonschema
 Architecture: all
 Depends:
  python3 (>= 3.2.3),
+ python3-pkg-resources,
  ${misc:Depends},
  ${python3:Depends},
 Description: An(other) implementation of JSON Schema (Draft 3 and 4) - Python 3.x
