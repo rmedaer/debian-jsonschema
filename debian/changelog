@@ -19,6 +19,7 @@ python-jsonschema (2.6.0-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Standards-Version is now 4.1.1.
   * Using pkgos-dh_auto_install.
+  * Testing with all versions of Python 3.
 
  -- Thomas Goirand <zigo@debian.org>  Wed, 01 Nov 2017 17:23:29 +0100
 

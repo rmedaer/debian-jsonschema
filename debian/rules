@@ -13,8 +13,9 @@ export PACKAGE_VERSION=$(shell dpkg-parsechangelog | grep Version: | cut -d' ' -
 
 override_dh_auto_test:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
-	nosetests -v
-	nosetests3 -v
+	set -e ; for i in 2.7 $(PYTHON3S) ; do \
+		PYTHON=python$$i python$$i -m nose -v ; \
+	done
 endif
 
 override_dh_auto_build:
