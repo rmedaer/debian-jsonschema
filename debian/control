@@ -8,6 +8,7 @@ Build-Depends:
  autopkgtest,
  debhelper (>= 10),
  dh-python,
+ openstack-pkg-tools,
  python-all,
  python-setuptools,
  python-vcversioner,
