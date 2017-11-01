@@ -17,6 +17,7 @@ python-jsonschema (2.6.0-1) UNRELEASED; urgency=medium
 
   [ Thomas Goirand ]
   * New upstream release.
+  * Standards-Version is now 4.1.1.
 
  -- Thomas Goirand <zigo@debian.org>  Wed, 01 Nov 2017 17:23:29 +0100
 
