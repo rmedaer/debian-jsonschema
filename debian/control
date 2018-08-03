@@ -1,7 +1,7 @@
 Source: python-jsonschema
 Section: python
 Priority: optional
-Maintainer: Debian OpenStack <openstack-devel@lists.alioth.debian.org>
+Maintainer: Debian OpenStack <team+openstack@tracker.debian.org>
 Uploaders:
  Thomas Goirand <zigo@debian.org>,
 Build-Depends:
