@@ -1,0 +1,9 @@
+Document: python-jsonschema-doc
+Title: python-jsonschema-doc Documentation
+Author: OpenStack
+Abstract: Sphinx documentation for python-jsonschema-doc
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-jsonschema-doc/html/index.html
+Files: /usr/share/doc/python-jsonschema-doc/html/*

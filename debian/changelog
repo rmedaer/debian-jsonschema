@@ -1,9 +1,13 @@
-python-jsonschema (2.6.0-3) UNRELEASED; urgency=medium
+python-jsonschema (2.6.0-3) unstable; urgency=medium
 
+  [ Ondřej Nový ]
   * d/control: Set Vcs-* to salsa.debian.org
   * d/control: Use team+openstack@tracker.debian.org as maintainer
 
- -- Ondřej Nový <onovy@debian.org>  Mon, 12 Feb 2018 10:30:46 +0100
+  [ Thomas Goirand ]
+  * Add a -doc package. (Closes: #857867)
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 06 Sep 2018 00:36:26 +0200
 
 python-jsonschema (2.6.0-2) unstable; urgency=medium
 
