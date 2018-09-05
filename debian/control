@@ -35,7 +35,7 @@ Architecture: all
 Depends:
  python-functools32,
  python-mock,
- python3-pkg-resources,
+ python-pkg-resources,
  ${misc:Depends},
  ${python:Depends},
 Suggests:
@@ -69,7 +69,6 @@ Description: An(other) implementation of JSON Schema (Draft 3 and 4) - doc
 Package: python3-jsonschema
 Architecture: all
 Depends:
- python3,
  python3-pkg-resources,
  ${misc:Depends},
  ${python3:Depends},
