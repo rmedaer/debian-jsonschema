@@ -2,6 +2,7 @@ python-jsonschema (2.6.0-4) unstable; urgency=medium
 
   * Define http{s,}_proxy when building the doc to avoid internet connection
     during the doc build (Closes: #908152).
+  * Add do-not-access-internet-during-doc-build.patch.
 
  -- Thomas Goirand <zigo@debian.org>  Fri, 07 Sep 2018 09:03:51 +0200
 
