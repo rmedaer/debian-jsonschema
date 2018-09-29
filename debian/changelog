@@ -1,3 +1,9 @@
+python-jsonschema (2.6.0-4) UNRELEASED; urgency=medium
+
+  * Remove python-mock from runtime dependency
+
+ -- Ondřej Nový <onovy@debian.org>  Sat, 29 Sep 2018 23:51:40 +0200
+
 python-jsonschema (2.6.0-3) unstable; urgency=medium
 
   [ Ondřej Nový ]
