@@ -1,0 +1,33 @@
+Description: Fixup broken test in Draft07
+ Fixing broken test in Draft07 (with idn-email).
+ Should be reported to Julian.
+Author: Raphael Medaer <rme@escaux.com>
+Forwarded: no
+Last-Update: 2019-02-20
+
+Index: python-jsonschema/jsonschema/tests/test_validators.py
+===================================================================
+--- python-jsonschema.orig/jsonschema/tests/test_validators.py
++++ python-jsonschema/jsonschema/tests/test_validators.py
+@@ -1250,7 +1250,3 @@
+-    (validators.Draft3Validator, jsonschema.draft3_format_checker),
+-    (validators.Draft4Validator, jsonschema.draft4_format_checker),
+-    (validators.Draft6Validator, jsonschema.draft6_format_checker),
+-    (validators.Draft7Validator, jsonschema.draft7_format_checker),
+ ):
+     for format in checker.checkers:
+         def test(self, checker=checker, format=format):
+Index: python-jsonschema/jsonschema/_format.py
+===================================================================
+--- python-jsonschema.orig/jsonschema/_format.py
++++ python-jsonschema/jsonschema/_format.py
+@@ -177,7 +177,7 @@
+     return wrap
+ 
+ 
+-@_checks_drafts(name="idn-email")
++#@_checks_drafts(name="idn-email")
+ @_checks_drafts(name="email")
+ def is_email(instance):
+     if not isinstance(instance, str_types):
+

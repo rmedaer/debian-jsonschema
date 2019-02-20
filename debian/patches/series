@@ -1,2 +1,3 @@
 fixup-version.patch
 do-not-access-internet-during-doc-build.patch
+fixup-idn-email-test.patch

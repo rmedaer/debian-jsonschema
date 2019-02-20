@@ -20,17 +20,29 @@ Index: python-jsonschema/setup.py
 ===================================================================
 --- python-jsonschema.orig/setup.py
 +++ python-jsonschema/setup.py
-@@ -27,6 +27,7 @@ extras_require = {
- 
- setup(
-     name="jsonschema",
-+    version="2.6.0",
-     packages=["jsonschema", "jsonschema.tests"],
-     package_data={"jsonschema": ["schemas/*.json"]},
-     setup_requires=["vcversioner>=2.16.0.0"],
-@@ -39,5 +40,4 @@ setup(
-     long_description=long_description,
-     url="http://github.com/Julian/jsonschema",
-     entry_points={"console_scripts": ["jsonschema = jsonschema.cli:main"]},
--    vcversioner={"version_module_paths" : ["jsonschema/_version.py"]},
+@@ -1,2 +1,2 @@
+ from setuptools import setup
+-setup(use_scm_version=True)
++setup(use_scm_version=False,version="3.0.0")
+Index: python-jsonschema/setup.cfg
+===================================================================
+--- python-jsonschema.orig/setup.cfg
++++ python-jsonschema/setup.cfg
+@@ -1,5 +1,6 @@
+ [metadata]
+ name = jsonschema
++version = 3.0.0
+ url = https://github.com/Julian/jsonschema
+ description = An implementation of JSON Schema validation for Python
+ long_description = file: README.rst
+Index: python-jsonschema/jsonschema/__init__.py
+===================================================================
+--- python-jsonschema.orig/jsonschema/__init__.py
++++ python-jsonschema/jsonschema/__init__.py
+@@ -30,4 +30,4 @@
  )
+ 
+ from pkg_resources import get_distribution
+-__version__ = get_distribution(__name__).version
++__version__ = "3.0.0"
+

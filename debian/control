@@ -14,8 +14,15 @@ Build-Depends:
  python-vcversioner,
  python3-all,
  python3-setuptools,
+ python-sphinx,
  python3-sphinx,
+ python-sphinxcontrib.spelling,
+ python3-sphinxcontrib.spelling,
  python3-vcversioner,
+ python-perf,
+ python3-perf,
+ python-certifi,
+ python3-certifi,
 Build-Depends-Indep:
  python-functools32,
  python-mock,
@@ -25,6 +32,10 @@ Build-Depends-Indep:
  python3-mock,
  python3-nose,
  python3-pytest,
+ python-attr (>= 17.4.0),
+ python3-attr (>= 17.4.0),
+ python-pyrsistent,
+ python3-pyrsistent,
 Standards-Version: 4.1.1
 Vcs-Git: https://salsa.debian.org/openstack-team/python/python-jsonschema.git
 Vcs-Browser: https://salsa.debian.org/openstack-team/python/python-jsonschema
