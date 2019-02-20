@@ -1,3 +1,20 @@
+v3.0.0
+------
+
+* Support for Draft 6 and Draft 7
+* Draft 7 is now the default
+* New ``TypeChecker`` object for more complex type definitions (and overrides)
+* Falling back to isodate for the date-time format checker is no longer
+  attempted, in accordance with the specification
+
+v2.6.0
+------
+
+* Support for Python 2.6 has been dropped.
+* Improve a few error messages for ``uniqueItems`` (#224) and
+  ``additionalProperties`` (#317)
+* Fix an issue with ``ErrorTree``'s handling of multiple errors (#288) 
+
 v2.5.0
 ------
 

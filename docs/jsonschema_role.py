@@ -8,17 +8,22 @@ try:
 except ImportError:
     import urllib.request as urllib
 
+import certifi
 from lxml import html
 
 
-VALIDATION_SPEC = "http://json-schema.org/latest/json-schema-validation.html"
+VALIDATION_SPEC = "https://json-schema.org/draft-04/json-schema-validation.html"
 
 
 def setup(app):
     """
     Install the plugin.
 
-    :argument sphinx.application.Sphinx app: the Sphinx application context
+    Arguments:
+
+        app (sphinx.application.Sphinx):
+
+            the Sphinx application context
 
     """
 
@@ -39,7 +44,11 @@ def fetch_or_load(spec_path):
     """
     Fetch a new specification or use the cache if it's current.
 
-    :argument cache_path: the path to a cached specification
+    Arguments:
+
+        cache_path:
+
+            the path to a cached specification
 
     """
 
@@ -54,7 +63,7 @@ def fetch_or_load(spec_path):
             raise
 
     request = urllib.Request(VALIDATION_SPEC, headers=headers)
-    response = urllib.urlopen(request)
+    response = urllib.urlopen(request, cafile=certifi.where())
 
     if response.code == 200:
         with open(spec_path, "w+b") as spec:
@@ -76,21 +85,41 @@ def docutils_sucks(spec):
     """
 
     base_url = VALIDATION_SPEC
-    ref_url = "http://json-schema.org/latest/json-schema-core.html#anchor25"
-    schema_url = "http://json-schema.org/latest/json-schema-core.html#anchor22"
+    ref_url = "https://json-schema.org/draft-04/json-schema-core.html#rfc.section.4.1"
+    schema_url = "https://json-schema.org/draft-04/json-schema-core.html#rfc.section.6"
 
     def validator(name, raw_text, text, lineno, inliner):
         """
         Link to the JSON Schema documentation for a validator.
 
-        :argument str name: the name of the role in the document
-        :argument str raw_source: the raw text (role with argument)
-        :argument str text: the argument given to the role
-        :argument int lineno: the line number
-        :argument docutils.parsers.rst.states.Inliner inliner: the inliner
+        Arguments:
 
-        :returns: 2-tuple of nodes to insert into the document and an iterable
-            of system messages, both possibly empty
+            name (str):
+
+                the name of the role in the document
+
+            raw_source (str):
+
+                the raw text (role with argument)
+
+            text (str):
+
+                the argument given to the role
+
+            lineno (int):
+
+                the line number
+
+            inliner (docutils.parsers.rst.states.Inliner):
+
+                the inliner
+
+        Returns:
+
+            tuple:
+
+                a 2-tuple of nodes to insert into the document and an
+                iterable of system messages, both possibly empty
 
         """
 
